@@ -68,7 +68,8 @@ Apply the computing capabilities of GPUs, CPUs and other platforms that support 
 
 Use multiple computing devices of the same or different type in parallel.
 
-## pyts: a Python package for time series classification
+## pyts: pip install pyts
+a Python package for time series classification
 pyts is a Python package for time series classification. It aims to make time series classification easily accessible by providing preprocessing and utility tools, and implementations of state-of-the-art algorithms. Most of these algorithms transform time series, thus pyts provides several tools to perform these transformations.
 
 ## chaospy 4.3.12  pip install chaospy   # 不确定度量化的数值工具，没用！
