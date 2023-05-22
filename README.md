@@ -1,49 +1,52 @@
-# tsalab
+# 时间序列分析实验室 tsalab
 
-这个版本使用的是 GITEE 仓库
 
-关于时间序列分析相关的研究
+# DA310  Env：
 
-开发环境参照 DA310， 这里实际使用的是 python=3.9
+## 基础安装
 
-## 基础环境：
+pip install scipy numpy matplotlib pandas  ipython scikit-learn statsmodels patsy seaborn beautifulsoup4 simplejson bokeh psutil  pylint flake8 yapf autopep8 black requests lxml astropy scikit-learn-intelex ipykernel plotly
 
-pip install scipy numpy matplotlib pandas  ipython scikit-learn statsmodels patsy seaborn beautifulsoup4 simplejson bokeh psutil  pylint flake8 yapf autopep8 black requests lxml astropy scikit-learn-intelex ipykernel plotly -i https://mirrors.cloud.tencent.com/pypi/simple
+## 音频相关安装
 
-## pip 默认源  -i https://pypi.org/simple
+pip install librosa==0.8.1 pip install soundfile # 因为最新版有很多变化，只能用老的配合课件
+pip install PyWavelets  # for the wavelet tool
 
-## 时间序列包
+安装 pyaudio会麻烦些
+(1) Linux
+sudo apt-get install ffmpeg
+sudo apt-get install libsndfile1
+sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly
+sudo apt-get install  libportaudio2 portaudio19-dev
+
+pip install pyaudio
+(2) Winodws
+python -m pip install pygobject
+
+## 时间序列
 
  pip install nolds pynamical PyRQA pyts hundun
  pip install  AutoTS Sktime tsfresh
 
-# 按照要求，先装torch， 再装fastai, 最后 tsai
+ 按照要求，先装torch， 再装fastai, 最后 tsai
 
-pip install torch torchvision torchaudio # 这个会装 torch 2.0.1 GPU版本会带着 nvida的函数库，
+ pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+ pip install fastai
+ pip install tsai
+ pip install -U Prophet -i https://pypi.org/simple
 
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu # 装最新的CPU版本
+## FASTAI 相关资料需要安装 (建议fastai的相关学习到GPU服务器上)
 
-pip install torch==1.13.1+cpu torchvision==0.14.1+cpu torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cpu
+pip install fastbook
 
-pip install fastai
+   2022年最后更新， 支持python3.8，
 
-pip install tsai
+  会造成 jupyterlab-widgets， widgetsnbextension， ipywidgets  降级， 如果有需要，注意单独安装其环境
 
-# Prophet
+pip install -U duckduckgo_search
 
-pip install Prophet # 这个包跟 tensorflow， tsai打架， 有需要单独安装一个环境
+   一直在更新，支持python3.11
 
-pip install -U Prophet -i https://pypi.org/simple
-
-## 神经网络， DA310里面按照需要选装
-
- pip3 install torch torchvision torchaudio
- pip install torch==1.13.1+cpu torchvision==0.14.1+cpu torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cpu
-
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 cpuonly -c pytorch
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
-pip install tensorflow
-
-## 可怜存储太少, 可以根据需要少装些
-
+ #可怜存储太少
 pip cache purge
+conda clean --all
