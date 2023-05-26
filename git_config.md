@@ -1,4 +1,5 @@
-## Global setting:
+## Global setting for Gitee:
+
 git config --global user.name "bfcatlu"
 
 git config --global user.email "bfcat@qq.com"
