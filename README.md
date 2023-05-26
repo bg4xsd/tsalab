@@ -3,6 +3,12 @@
 
 # DA310  Env：
 
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip config set global.index-url https://mirrors.cloud.tencent.com/pypi/simple
+
 ## 基础安装
 
 pip install scipy numpy matplotlib pandas  ipython scikit-learn statsmodels patsy seaborn beautifulsoup4 simplejson bokeh psutil  pylint flake8 yapf autopep8 black requests lxml astropy scikit-learn-intelex ipykernel plotly
