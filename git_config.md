@@ -19,3 +19,6 @@ git remote add origin https://gitee.com/bfcatlu/tsalab.git
 git pull origin master  # for the first time
 
 git push origin master  # necessary step For new repository
+
+## Fix long path problem
+git config --global core.longpaths true
