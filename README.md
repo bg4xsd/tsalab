@@ -37,12 +37,16 @@ python -m pip install pygobject
  按照要求，先装torch， 再装fastai, 最后 tsai
 
  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
  pip install fastai
+
  pip install tsai
+
  pip install -U Prophet -i https://pypi.org/simple
 
  ## add 2023.06.01 概率时间
  conda install -c conda-forge pymc # for windows
+ 
  conda install -c conda-forge gluonts # for windows, need mxnet with vs c++ compiler
 
  For Linux, it works well.
