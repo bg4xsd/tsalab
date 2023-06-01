@@ -41,6 +41,12 @@ python -m pip install pygobject
  pip install tsai
  pip install -U Prophet -i https://pypi.org/simple
 
+ ## add 2023.06.01 概率时间
+ conda install -c conda-forge pymc
+ conda install -c conda-forge gluonts
+
+ pip install pymc mxnet -i https://mirrors.cloud.tencent.com/pypi/simple
+
 ## FASTAI 相关资料需要安装 (建议fastai的相关学习到GPU服务器上)
 
 pip install fastbook
