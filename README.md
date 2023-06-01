@@ -57,7 +57,7 @@ python -m pip install pygobject
 
  For Linux, it works well.
  
- pip install pymc mxnet -i https://mirrors.cloud.tencent.com/pypi/simple
+ pip install pytensor pymc mxnet -i https://mirrors.cloud.tencent.com/pypi/simple
 
 ## FASTAI 相关资料需要安装 (建议fastai的相关学习到GPU服务器上)
 
