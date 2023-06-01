@@ -16,22 +16,28 @@ pip install scipy numpy matplotlib pandas  ipython scikit-learn statsmodels pats
 ## 音频相关安装
 
 pip install librosa==0.8.1 pip install soundfile # 因为最新版有很多变化，只能用老的配合课件
+
 pip install PyWavelets  # for the wavelet tool
 
 安装 pyaudio会麻烦些
 (1) Linux
 sudo apt-get install ffmpeg
+
 sudo apt-get install libsndfile1
+
 sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly
+
 sudo apt-get install  libportaudio2 portaudio19-dev
 
 pip install pyaudio
+
 (2) Winodws
 python -m pip install pygobject
 
 ## 时间序列
 
  pip install nolds pynamical PyRQA pyts hundun
+ 
  pip install  AutoTS Sktime tsfresh
 
  按照要求，先装torch， 再装fastai, 最后 tsai
@@ -46,7 +52,7 @@ python -m pip install pygobject
 
  ## add 2023.06.01 概率时间
  conda install -c conda-forge pymc # for windows
- 
+
  conda install -c conda-forge gluonts # for windows, need mxnet with vs c++ compiler
 
  For Linux, it works well.
