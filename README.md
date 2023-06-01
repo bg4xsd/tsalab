@@ -73,4 +73,5 @@ pip install -U duckduckgo_search
 
  #可怜存储太少
 pip cache purge
+
 conda clean --all
