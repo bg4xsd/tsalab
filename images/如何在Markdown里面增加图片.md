@@ -27,3 +27,6 @@
 
 第三种方法，网络链接， github版本
 ![Image](https://github.com/bg4xsd/tsalab/blob/main/images/bfcat.png?raw=true)
+
+第四种方法，使用网络链接，github的另外一种版本，对付大文件的
+![Image](https://raw.githubusercontent.com/bg4xsd/tsalab/main/images/bfcat.png)
