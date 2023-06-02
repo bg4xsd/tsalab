@@ -56,3 +56,10 @@ pip install -U duckduckgo_search
  #可怜存储太少
 pip cache purge
 conda clean --all
+
+
+![Image](./images/bfcat.png)
+
+![Image](./images/bfcat.png?raw=true)
+
+![Image](./images/bfcat.png)
